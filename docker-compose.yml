@@ -23,14 +23,6 @@ services:
       - prometheus
     ports:
       - '3000:3000'
-  app:
-    build:
-      context: ./app
-      dockerfile: Dockerfile
-    ports:
-      - '9200:9200'
-    command: 'index.js'
-
 
 volumes:
   prometheus_data: {}
